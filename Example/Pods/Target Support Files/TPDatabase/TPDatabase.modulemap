@@ -1,0 +1,6 @@
+framework module TPDatabase {
+  umbrella header "TPDatabase-umbrella.h"
+
+  export *
+  module * { export * }
+}

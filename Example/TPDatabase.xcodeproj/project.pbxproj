@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		016E5F266E14633556E56CE5 /* Pods-TPDatabase_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPDatabase_Tests.debug.xcconfig"; path = "Target Support Files/Pods-TPDatabase_Tests/Pods-TPDatabase_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		148ABD8C8A7A8E7823886308 /* Pods-TPDatabase_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPDatabase_Tests.release.xcconfig"; path = "Target Support Files/Pods-TPDatabase_Tests/Pods-TPDatabase_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1573FD277C5F310BB39DF525 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1573FD277C5F310BB39DF525 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* TPDatabase_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPDatabase_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,9 +61,9 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71B1BE0702099F548B41AC90 /* Pods_TPDatabase_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPDatabase_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		730F061EACF5CD44C580D0EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		730F061EACF5CD44C580D0EA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		97DE74C71F96459EFFBCFE09 /* TPDatabase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TPDatabase.podspec; path = ../TPDatabase.podspec; sourceTree = "<group>"; };
+		97DE74C71F96459EFFBCFE09 /* TPDatabase.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPDatabase.podspec; path = ../TPDatabase.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C1D188B2343542E6D3955306 /* Pods-TPDatabase_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPDatabase_Example.debug.xcconfig"; path = "Target Support Files/Pods-TPDatabase_Example/Pods-TPDatabase_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D73B8CE8B72DAEA84FA95D73 /* Pods_TPDatabase_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPDatabase_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C7306D923AAD9BAA69F87A /* Pods-TPDatabase_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPDatabase_Example.release.xcconfig"; path = "Target Support Files/Pods-TPDatabase_Example/Pods-TPDatabase_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				016E5F266E14633556E56CE5 /* Pods-TPDatabase_Tests.debug.xcconfig */,
 				148ABD8C8A7A8E7823886308 /* Pods-TPDatabase_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +346,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TPDatabase_Example/Pods-TPDatabase_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Asterism/Asterism.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/TPDatabase/TPDatabase.framework",
+				"${BUILT_PRODUCTS_DIR}/TPFoundation/TPFoundation.framework",
+				"${BUILT_PRODUCTS_DIR}/TPJsonModel/TPJsonModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Asterism.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPDatabase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPFoundation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPJsonModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
