@@ -3,7 +3,7 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
-  - TPDatabase (1.0.0):
+  - TPDatabase (1.0.1):
     - Asterism
     - FMDB
     - TPFoundation
@@ -37,10 +37,10 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Asterism: b2992aaf4ac2dbc66c3aea3a6412c67e3e689835
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
-  TPDatabase: 462d84788800b9852c025530d946df6b28f8ffa9
+  TPDatabase: 3970ec0864a04adcc29d18a35510e1b691b9c06d
   TPFoundation: 48afacb359e2f12cb8fd0214aa88e8e8b5e04552
   TPJsonModel: 08b25aa72d62e6991639e62280796336972352c6
 
 PODFILE CHECKSUM: bae2faef73fab39591c11fe52343a8688957be43
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

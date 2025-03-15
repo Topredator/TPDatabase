@@ -4,6 +4,7 @@ GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Asterism/Asterism.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/FMDB/FMDB.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TPDatabase/TPDatabase.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TPFoundation/TPFoundation.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TPJsonModel/TPJsonModel.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -l"sqlite3" -framework "Asterism" -framework "FMDB" -framework "TPDatabase" -framework "TPFoundation" -framework "TPJsonModel"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/Asterism" "-F${PODS_CONFIGURATION_BUILD_DIR}/FMDB" "-F${PODS_CONFIGURATION_BUILD_DIR}/TPDatabase" "-F${PODS_CONFIGURATION_BUILD_DIR}/TPFoundation" "-F${PODS_CONFIGURATION_BUILD_DIR}/TPJsonModel"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
